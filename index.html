@@ -31,7 +31,7 @@
 			<a class="nav-item nav-link" href="#about-me">About Me<span class="sr-only">(current)</span></a>
 			<a class="nav-item nav-link" href="#projects">Projects</a>
 			<a class="nav-item nav-link" href="#footer">Contact Me</a>
-			<a class="nav-item nav-link" href="#">Resume</a>
+			<a class="nav-item nav-link" onclick="location.href='resume.html'" style="cursor: pointer">Resume</a>
 		</div>
 	</div>
 </nav>
@@ -41,10 +41,10 @@
 			<h1>Bryan Montalvan</h1>
 			<h2>Frontend Developer - Student</h2>
 			<div class="socials">
-				<button class="social-button">
+				<button class="social-button" onclick="location.href='https://github.com/bryanmontalvan'">
 					<span class="fa fa-github"></span>
 				</button>
-				<button class="social-button">
+				<button class="social-button" onclick="location.href='https://www.linkedin.com/in/bryan-montalvan/'">
 					<span class="fa fa-linkedin"></span>
 				</button>
 			</div>
@@ -72,43 +72,54 @@
 				<h2>Skills & Technologies</h2>
 				<hr>
 				<div class="skills-grid">
-					<div class="Hey">
+					<div class="img-logo list-logo">
 						<img src="imgs/technologies/c-logo.png" alt="c-logo" id="skills-img-1">
 					</div>
-					<div class="hey1">
+					<div class="img-logo1 list-logo">
 						<img src="imgs/technologies/cpp-logo.png" alt="cpp-logo" id="skills-img-2">
 					</div>
-					<div class="hey2">
+					<div class="img-logo2 list-logo">
 						<img src="imgs/technologies/java-logo.png" alt="java-logo" id="skills-img-3">
 					</div>
-					<div class="hey4">
+					<div class="img-logo4 list-logo">
 						<img src="imgs/technologies/css3.png" alt="css-logo" id="skills-img-4">
 					</div>
-					<div class="hey5">
+					<div class="img-logo5 list-logo">
 						<img src="imgs/technologies/javacript.png" alt="js-logo" id="skills-img-5">
 					</div>
-					<div class="hey6">
+					<div class="img-logo6 list-logo">
 						<img src="imgs/technologies/html.png" alt="html-logo" id="skills-img-6">
 					</div>
+					<div class="img-logo7 list-logo">
+						<img src="imgs/technologies/react-logo.png" alt="html-logo" id="skills-img-6">
+					</div>
+					<div class="img-logo8 list-logo">
+						<img src="imgs/technologies/nodejs-logo.png" alt="html-logo" id="skills-img-6">
+					</div>
+					<div class="img-logo9 list-logo">
+						<img src="imgs/technologies/git-logo.png" alt="html-logo" id="skills-img-6">
+					</div>
+
 				</div>
 			</div>
 		</div>
 
 	</section>
 	<section class="projects" id="projects">
-		<h2>Projects</h2>
+		<h2 id="projects-title">Projects</h2>
 		<div class="project-container">
 			<div class="project-1 project-liste">
 				<h3><b>LearnMYR</b> | 2021</h3>
 				<hr>
 				<p>LearnMYR is a virtual reality experience for the classroom, a full-stack web application used as an educational tool to
 				teach beginner programmers on how to code. MYR's easy to use API allow users to easily interact with the VR environment.</p>
-				<div class="project-technologies">
-					<img src="imgs/technologies/javacript.png" alt="">
-					<img src="imgs/technologies/react-logo.png" alt="">
-					<img src="imgs/technologies/firebase-logo.png" alt="">
-					<img src="imgs/technologies/mongodb-logo.png" alt="">
-					<img src="imgs/technologies/docker-container.png" alt="">
+				<div class="project-links">
+					<button onclick="location.href='https://github.com/engaging-computing/MYR'">
+						<span class="fa fa-github"> Github</span>
+					</button>
+					<button onclick="location.href='https://learnmyr.org/'">
+						<span class="fa fa-link"> Website</span>
+					</button>
 				</div>
 			</div>
 			<div class="project-2 project-liste">
@@ -117,31 +128,39 @@
 				<p>Yoru is a web based application with the purpose of helping users to find common
 				available times with friends or peers. This is an on-going project which I am
 				working alongside with fellow college students.</p>
-				<div class="project-technologies">
-					<img src="imgs/technologies/javacript.png" alt="">
-					<img src="imgs/technologies/react-logo.png" alt="">
-					<img src="imgs/technologies/golang-logo.png" alt="">
-					<img src="imgs/technologies/firebase-logo.png" alt="">
-					<img src="imgs/technologies/mongodb-logo.png" alt="">
-					<img src="imgs/technologies/tailwind-logo.png" alt="">
+				<div class="project-links">
+					<button onclick="location.href='https://github.com/jakecorrenti/yoru'">
+						<span class="fa fa-github"> Github</span>
+					</button>
 				</div>
 			</div>
 			<div class="project-3 project-liste">
 				<h3><b>Evil Hangman</b> | 2020</h3>
 				<hr>
 				<p>A hangman style game where closer the user gets to winning the game, the harder the program will try to trick the player to prevent the player from winning. This is a school project created in C using a Binary Search Tree as its main data structure. </p>
-				<div class="project-technologies">
-					<img src="imgs/technologies/c-logo.png" alt="c-logo">
+				<div class="project-links">
+					<button>
+						<span class="fa fa-github"> Github</span>
+					</button>
 				</div>
 			</div>
-			<div class="project-img-1">
-				<img src="imgs/project-sc/myr_screenshot.png" alt="">
+			<div class="project-img">
+				<img src="imgs/technologies/javacript.png" alt="">
+				<img src="imgs/technologies/react-logo.png" alt="">
+				<img src="imgs/technologies/redux-logo.png" alt="">
+				<img src="imgs/technologies/firebase-logo.png" alt="">
+				<img src="imgs/technologies/mongodb-logo.png" alt="">
+				<img src="imgs/technologies/docker-container.png" alt="">
 			</div>
-			<div class="project-img-2">
-				<img src="imgs/project-sc/yoru-sc.png" alt="">
-			</div>
-			<div class="project-img-3">
-				<img src="imgs/project-sc/hangman-screenshot.png" alt="">
+			<div class="project-img">
+				<img src="imgs/technologies/javacript.png" alt="">
+				<img src="imgs/technologies/react-logo.png" alt="">
+				<img src="imgs/technologies/golang-logo.png" alt="">
+				<img src="imgs/technologies/firebase-logo.png" alt="">
+				<img src="imgs/technologies/mongodb-logo.png" alt="">
+				<img src="imgs/technologies/tailwind-logo.png" alt="">			</div>
+			<div class="project-img">
+				<img src="imgs/technologies/c-logo.png" alt="c-logo">
 			</div>
 		</div>
 	</section>
@@ -151,13 +170,13 @@
 			<div class="footer-contact">
 				<h2>Contact</h2>
 				<hr>
-				<h4>📧 bryan_montalvanarevalo@student.uml.edu</h4>
+				<h4>📧 <a id="email-btn" href="mailto:bryan_montalvanarevalo@student.uml.edu"">bryan_montalvanarevalo@student.uml.edu</a></h4>
 				<h4>📱 (978) 770-1070</h4>
 			</div>
 			<div class="footer-education">
 				<h2>Education</h2>
 				<hr>
-				<h4>University of Massachusetts Lowell</h4>
+				<h4 id="school-link" onclick="location.href='https://www.uml.edu/Catalog/Undergraduate/Sciences/Departments/Computer-Science/Degree-pathways/DP-CS-General-2020.aspx'">University of Massachusetts Lowell</h4>
 				<h5>B.S. Computer Science</h5>
 				<h5>Class of 2024</h5>
 			</div>
@@ -165,10 +184,10 @@
 				<h2>Socials</h2>
 				<hr>
 				<button>
-					<span class="fa fa-linkedin"></span>
+					<span class="fa fa-github" onclick="location.href='https://github.com/bryanmontalvan'"></span>
 				</button>
 				<button>
-										<span class="fa fa-github"></span>
+					<span class="fa fa-linkedin" onclick="location.href='https://www.linkedin.com/in/bryan-montalvan/'"></span>
 				</button>
 			</div>
 		</div>
