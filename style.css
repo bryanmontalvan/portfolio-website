@@ -502,7 +502,10 @@ hr{
 	 }
 
 	section:nth-of-type(3){
-		 height: 140vh;
+		 min-height: 140vh;
+	 }
+	section:nth-of-type(4){
+		 min-height: 90vh;
 	 }
 
 	 /* About Me */
@@ -515,11 +518,16 @@ hr{
 	}
 
 	.about-me-container p{
-		font-size: 2vh;
+		font-size: 1.8vh;
 	}
 
 	.about-me-text {
 		width: 95vw;
+		padding-left: 5vh;
+	}
+
+	.about-me-text li{
+		font-size: 1.8vh;
 	}
 
 	.about-me-skills h2{
@@ -537,7 +545,7 @@ hr{
 	}
 
 	.list-logo img{
-		height: 5.3vh;
+		height: 5.2vh;
 		width: 5.2vh;
 	}
 
@@ -557,7 +565,7 @@ hr{
 	}
 
 	.project-liste p{
-		font-size: 2vh;
+		font-size: 1.8vh;
 		width: 80vw;
 	}
 
@@ -582,7 +590,7 @@ hr{
 	}
 
 	.footer-socials button{
-		width: 15vw;
+		width: 20vw;
 		
 	}
 }
