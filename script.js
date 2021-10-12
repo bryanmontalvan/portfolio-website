@@ -15,4 +15,10 @@ var imgArray = [
 ]
 
 
+function showTechnologies(){
+	for (let i = 0; i < imgArray.length; i++){
+		
+	}
+}
+
 
