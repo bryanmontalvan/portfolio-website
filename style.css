@@ -250,7 +250,7 @@ hr{
 
 .project-container img{
 	width: 200px;
-	height: 200px;
+	height: 3em;
 	object-fit: cover;
 	border-radius: 50px;
 }
@@ -369,7 +369,9 @@ hr{
 
 /* Media Queries */
 @media only screen and (max-width: 1279px){
-	
+	.footer-socials h4{
+		font-size: 1.2em;
+	}
 }
 
   /* Smaller Screens */
