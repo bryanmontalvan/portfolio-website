@@ -12,10 +12,10 @@ body{
 	color: white;
 }
 
-h1{
-	color: white;
+hr{
+	width: 70%;
 }
-
+ /* ---------------------------- */
 /* Sections */
 section:nth-of-type(1){
 	min-height: 100vh;
@@ -31,7 +31,7 @@ section:nth-of-type(3){
 section:nth-of-type(4){
 	min-height: 40vh;
 }
-
+ /* ---------------------------- */
 /*  Nav Bar */
  .navbar-collapse{ /*Moves nav-links to right side*/
   	justify-content: flex-end;
@@ -107,10 +107,8 @@ section:nth-of-type(4){
 	 font-size: 5vh;
 	 width: 5vw;
  }
-
  /* ------------------------------------ */
  /*  About me  */
-
 .about-me-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -131,11 +129,6 @@ section:nth-of-type(4){
 	margin-top: 3vh;
 	grid-area: about-me-text;
 	padding-left: 5vw;
-}
-
-/* Defaults all HR's */
-hr{
-	width: 70%;
 }
 
 .about-me-text h2{
@@ -200,12 +193,8 @@ hr{
 	width: 50%;
 	margin: 0px auto;
 }
-
-
-
 /* -------------------------------------------- */
 /* Projects Section */
-
 .projects h2{
 	padding-top: 5vh;
 	font-size: 5vh;
@@ -311,6 +300,7 @@ hr{
 }
 
 .footer-contact h4{
+	font-size: 1.5em;
 	padding-top: 1.5vh;
 	text-align:left;
 }
@@ -368,9 +358,45 @@ hr{
   }
 
 /* Media Queries */
-@media only screen and (max-width: 1279px){
-	.footer-socials h4{
-		font-size: 1.2em;
+/* Laptops */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+	.skills-grid img{
+		width: 55%;
+	}
+
+	.project-img img{
+		width: 13%;
+		height: 23%;
+		object-fit: contain;
+	}
+	
+	.footer-contact h4{
+	font-size: 1.2em;
+	}
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
+	.skills-grid img{
+		width: 55%;
+	}
+
+	.project-img img{
+		width: 13%;
+		height: 23%;
+		object-fit: contain;
+	}
+
+	.footer-contact h4{
+	font-size: 1.2em;
 	}
 }
 
@@ -400,7 +426,7 @@ hr{
 		min-height: 130vh;
 	}
 	
-	/* About */
+	/* About Section*/
 	.about-me-text{
 		padding-left: 20vh;
 	}
@@ -417,9 +443,7 @@ hr{
 		height: 14vh;
 		width: 13.5vh;
 	}
-
-	/* Project */
-
+	/* Project Section */
 	.project-liste{
 		width: 80vw;
 	}
@@ -469,16 +493,16 @@ hr{
 		font-size: 8vh;
 	}
 }
-
+/* Smaller Screens (Phones) */
 @media screen and (max-width: 450px){
-	 /* Navbar */
+	 /* Navbar Section*/
 	.navbar{
 		margin: 0;
 		width: 100%;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	/* Hero */
+	/* Hero Section*/
 	.hero-container{
 		width: 80vw;
 		padding-top: 15vh;
@@ -555,7 +579,7 @@ hr{
 	}
 
 
-	/* Projects */
+	/* Projects Section*/
 	#projects-title{
 		padding-top: 150px;
 	}
@@ -578,7 +602,7 @@ hr{
 		display: none;
 	}
 
-	/* Footer */
+	/* Footer Section*/
 	.footer-container{
 		display: flex;
 		flex-direction: column;
