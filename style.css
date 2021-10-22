@@ -209,14 +209,15 @@ hr{
 .projects h2{
 	padding-top: 5vh;
 	font-size: 5vh;
-	padding-left: 10vw;
+	/* padding-left: 5.5%; */
+	text-align: center;
 }
 
 .project-container {
   /* border: 2px solid blue; */
   height: 80vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr 1.5fr;
+  grid-template-columns: 1fr 1fr 0.25fr 1.75fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -244,7 +245,7 @@ hr{
 
 .project-liste{
 	padding-top: 50px;
-	padding-left: 10vw;
+	padding-left: 10%;
 }
 
 .project-container img{
