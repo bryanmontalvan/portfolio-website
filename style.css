@@ -172,11 +172,10 @@ section:nth-of-type(4){
 }
 
 .skills-grid img:hover{
-	filter: drop-shadow(0 0 0.75rem rgb(179, 179, 179));
+	filter: drop-shadow(0 0 0.75rem rgb(63, 62, 62));
 }
-
 .skills-grid img:focus{
-	filter: drop-shadow(0 0 0.75rem rgb(179, 179, 179));
+	filter: drop-shadow(0 0 0.75rem rgb(63, 62, 62));
 }
 
 .skills-grid div{
@@ -620,7 +619,39 @@ section:nth-of-type(4){
 
 	.footer-socials button{
 		width: 20vw;
-		
+        height: 5vh;
+		font-size: 15vw;
 	}
 }
 
+ /* Animations */
+.tracking-in-expand {
+  /* font-size: 5rem; */
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
