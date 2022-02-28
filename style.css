@@ -172,7 +172,7 @@ section:nth-of-type(4){
 }
 
 .skills-grid img:hover{
-	filter: drop-shadow(0 0 0.75rem rgb(63, 62, 62));
+	opacity: 0.4;
 }
 .skills-grid img:focus{
 	filter: drop-shadow(0 0 0.75rem rgb(63, 62, 62));
@@ -258,7 +258,7 @@ section:nth-of-type(4){
 .project-links button{
 	background-color: transparent;
 	color: white;
-	width: 80px;
+	width: 90px;
 	border: none;
 		transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
@@ -301,7 +301,7 @@ section:nth-of-type(4){
 .footer-contact h4{
 	font-size: 1.5em;
 	padding-top: 1.5vh;
-	text-align:left;
+	text-align: center;
 }
 
 /* Footer Education */
@@ -477,7 +477,6 @@ section:nth-of-type(4){
 	}
 
 	.footer-contact h4{
-		padding-left: 30px;
 		font-size: 4.5vh;
 		text-align: center;
 	}
@@ -613,8 +612,7 @@ section:nth-of-type(4){
 	}
 
 	.footer-contact h4{
-		padding-left: 30px;
-		font-size: 1.8vh;
+		font-size: 2vh;
 	}
 
 	.footer-socials button{
